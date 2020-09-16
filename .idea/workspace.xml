@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3191bd8d-32fa-4f26-97ba-96bf3d92354c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -153,6 +151,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Moni\XelLina\public" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -170,7 +173,8 @@
       <updated>1600086739642</updated>
       <workItem from="1600086740738" duration="1571000" />
       <workItem from="1600100544901" duration="1200000" />
-      <workItem from="1600158814948" duration="5285000" />
+      <workItem from="1600158814948" duration="6442000" />
+      <workItem from="1600238525272" duration="1305000" />
     </task>
     <servers />
   </component>
@@ -190,5 +194,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="73" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1600160192605" />
+    <state x="505" y="26" width="590" height="807" key="find.popup" timestamp="1600182966087">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="505" y="26" width="590" height="807" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1600182966087" />
   </component>
 </project>
