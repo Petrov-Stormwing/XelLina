@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/home', function () {
-    return view('welcome');
-});
+Route::get('/posts/{post}', [PostsController::class, 'show']);
+//function ($post){
+//    $posts=[
+//        'my-first-post'=>'Success'
+//    ];
+//
+//    return view('post', [
+//        'post'=>$posts[$post]
+//    ]);
+//});
