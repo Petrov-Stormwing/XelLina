@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
 
-    <title>Laravel</title>
+Name       : SimpleWork
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140225
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet"/>
+    <link href="css/fonts.css" rel="stylesheet"/>
 
 </head>
-<body class="antialiased">
 
-@yield('content')
-
+<body>
+    @yield('content')
 </body>
+
 </html>

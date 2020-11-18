@@ -18,13 +18,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/posts/{post}', [PostsController::class, 'show']);
-//function ($post){
-//    $posts=[
-//        'my-first-post'=>'Success'
-//    ];
-//
-//    return view('post', [
-//        'post'=>$posts[$post]
-//    ]);
-//});
+Route::get('/about', function () {
+    return view('about');
+});
