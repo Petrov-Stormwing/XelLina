@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\PostsController;
+use App\Http\Controllers\ArticlesController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', [
+        'articles' => Article::paginate(5)
+    ]);
 });
+
+Route::get('/articles', [ArticlesController::class, 'index']);
+Route::get('/articles/{article}', [ArticlesController::class, 'show']);
