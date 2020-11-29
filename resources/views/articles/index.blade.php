@@ -6,7 +6,9 @@
             @foreach($articles as $article)
                 <div id="content">
                     <div class="title">
-                        <h2>{{ $article->title }}</h2>
+                        <h2>
+                            <a href="{{$article->path()}}">{{ $article->title }}</a>
+                        </h2>
                         <span class="byline"> By Author Placeholder</span>
                     </div>
                     <p>
