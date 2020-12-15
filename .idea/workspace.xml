@@ -25,21 +25,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3191bd8d-32fa-4f26-97ba-96bf3d92354c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/XelLina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/XelLina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TagsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_11_175719_create_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/TagsSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_17_074524_create_posts_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_19_131015_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_19_131015_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ArticlesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ArticlesSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +255,10 @@
       <workItem from="1606499827267" duration="5645000" />
       <workItem from="1606583503310" duration="6516000" />
       <workItem from="1606665342684" duration="2437000" />
+      <workItem from="1607759061245" duration="1218000" />
+      <workItem from="1607848260789" duration="5043000" />
+      <workItem from="1607932240357" duration="2088000" />
+      <workItem from="1608019396224" duration="2659000" />
     </task>
     <servers />
   </component>
@@ -279,10 +285,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="582" y="0" key="#PHP/0.0.1600.860@0.0.1600.860" timestamp="1600160130260" />
-    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605799676089">
+    <state x="524" y="228" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607675289688">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1605799676089" />
+    <state x="524" y="228" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1607675289688" />
+    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607854282444">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="42" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1607854282444" />
     <state x="530" y="175" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605716913440">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -347,6 +357,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="275" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1600288978249" />
+    <state x="568" y="147" key="NewPhpClassDialog" timestamp="1607675307679">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="568" y="147" key="NewPhpClassDialog/0.0.1600.860@0.0.1600.860" timestamp="1607675307679" />
     <state x="614" y="363" key="ReplaceDuplicatesPrompt" timestamp="1606592969988">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
