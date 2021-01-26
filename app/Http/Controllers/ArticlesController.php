@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Tag;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
@@ -20,9 +21,13 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $article = Article::paginate(3);
+        if (request('tag')) {
+            $articles = Tag::where('name', request('tag'))->firstOrFail()->articles;
+        } else {
+            $articles = Article::latest()->get();
+        }
 
-        return view('articles.index', ['articles' => $article]);
+        return view('articles.index', ['articles' => $articles]);
     }
 
     /**
@@ -39,7 +44,9 @@ class ArticlesController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        return view('articles.create', [
+            'tags' => Tag::all()
+        ]);
     }
 
     /**
@@ -47,7 +54,15 @@ class ArticlesController extends Controller
      */
     public function store()
     {
-        Article::create($this->validateArticle());
+        $this->validateArticle();
+
+        $article = new Article(request(['title', 'excerpt', 'body']));
+        $article->user_id = 1;
+        $article->save();
+
+        if (request()->has('tags')) {
+            $article->tags()->attach(request('tags'));
+        }
 
         return redirect(route('articles.index'));
     }
@@ -81,6 +96,7 @@ class ArticlesController extends Controller
             'title' => 'required',
             'excerpt' => 'required',
             'body' => 'required',
+            'tags' => 'exists:tags,id'
         ]);
     }
 }
